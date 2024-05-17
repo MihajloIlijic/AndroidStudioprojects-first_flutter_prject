@@ -17,13 +17,8 @@ class test extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       body: Center(
-        child: Text(
-          'hello friends!',
-          style: TextStyle(
-              fontSize: 18.0,
-              letterSpacing: 1.5,
-              color: Colors.blue,
-              fontWeight: FontWeight.bold),
+        child: Image(
+          image: AssetImage('android/assets/th.jpeg'),
         ),
       ),
       floatingActionButton: FloatingActionButton(

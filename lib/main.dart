@@ -25,20 +25,29 @@ class test extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
             children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(20.0),
-                color: Colors.grey,
-                child: Text('Container_1'),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.grey,
+                  child: Text('Container_1'),
+                ),
               ),
-              Container(
-                padding: EdgeInsets.all(20.0),
-                color: Colors.blue,
-                child: Text('Container_2'),
+              Expanded(
+                flex: 3,
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.blue,
+                  child: Text('Container_2'),
+                ),
               ),
-              Container(
-                padding: EdgeInsets.all(20.0),
-                color: Colors.amber,
-                child: Text('Container_3'),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.amber,
+                  child: Text('Container_3'),
+                ),
               ),
             ],
           ),

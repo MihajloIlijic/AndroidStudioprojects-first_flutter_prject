@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() =>
-    runApp(MaterialApp(
-        home: test(),
+void main() => runApp(MaterialApp(
+      home: test(),
     ));
 
 class test extends StatelessWidget {
@@ -16,10 +15,51 @@ class test extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.deepOrange,
       ),
-      body: Center(
-        child: Image(
-          image: AssetImage('android/assets/th.jpeg'),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+
+        children: <Widget>[
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.grey,
+                child: Text('Container_1'),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.blue,
+                child: Text('Container_2'),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.amber,
+                child: Text('Container_3'),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(20.0),
+                child: Text('Container_4'),
+                color: Colors.green,
+
+
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                child: Text("Lilly"),
+                color: Colors.pink,
+              )
+            ],
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -29,4 +69,3 @@ class test extends StatelessWidget {
     );
   }
 }
-

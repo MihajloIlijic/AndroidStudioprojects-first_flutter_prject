@@ -52,20 +52,34 @@ class test extends StatelessWidget {
             ],
           ),
           Row(
+
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(20.0),
-                child: Text('Container_4'),
-                color: Colors.green,
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text('Container_4'),
+                  color: Colors.green,
 
 
+                ),
               ),
-              Container(
-                padding: EdgeInsets.all(20.0),
-                child: Text("Lilly"),
-                color: Colors.pink,
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text("Lilly"),
+                  color: Colors.pink,
+                ),
+              ),
+              Expanded(
+                flex: 3,
+                child: Container(
+                  child: Image.asset('android/assets/th.jpeg'),
+                ),
               )
+
             ],
           )
         ],
